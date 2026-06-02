@@ -1,0 +1,15 @@
+flowchart TD
+    A[Breast Cytology Sample] --> B{Is it adequate?}
+    B -- No --> C[Category 1: Insufficient / Non-diagnostic \n Repeat FNAC]
+    B -- Yes --> D{Cytological Evaluation}
+    
+    D --> E[Category 2: Benign \n Clinical / radiological follow-up]
+    D --> F[Category 3: Atypical / Indeterminate \n Correlation and possible biopsy]
+    D --> G[Category 4: Suspicious of Malignancy \n Core Biopsy recommended]
+    D --> H[Category 5: Malignant \n Therapeutic planning and biopsy]
+    
+    style C fill:#f9f,stroke:#333,stroke-width:2px
+    style E fill:#bbf,stroke:#333,stroke-width:2px
+    style F fill:#ffb,stroke:#333,stroke-width:2px
+    style G fill:#fbb,stroke:#333,stroke-width:2px
+    style H fill:#f99,stroke:#333,stroke-width:2px

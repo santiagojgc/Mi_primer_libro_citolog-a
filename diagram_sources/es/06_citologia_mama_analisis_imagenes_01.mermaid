@@ -1,0 +1,15 @@
+flowchart TD
+    A[Muestra Citológica de Mama] --> B{¿Es adecuada?}
+    B -- No --> C[Categoría 1: Insuficiente / No diagnóstica \n Repetir PAAF]
+    B -- Sí --> D{Evaluación Citológica}
+    
+    D --> E[Categoría 2: Benigna \n Control clínico / radiológico]
+    D --> F[Categoría 3: Atipia / Indeterminada \n Correlación y posible biopsia]
+    D --> G[Categoría 4: Sospechosa de Malignidad \n Biopsia Core recomendada]
+    D --> H[Categoría 5: Maligna \n Planificación terapéutica y biopsia]
+    
+    style C fill:#f9f,stroke:#333,stroke-width:2px
+    style E fill:#bbf,stroke:#333,stroke-width:2px
+    style F fill:#ffb,stroke:#333,stroke-width:2px
+    style G fill:#fbb,stroke:#333,stroke-width:2px
+    style H fill:#f99,stroke:#333,stroke-width:2px
